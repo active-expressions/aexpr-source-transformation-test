@@ -70,6 +70,10 @@ describe('Propagation Logic', function() {
         obj.a *= 1;
 
         expect(spy).not.to.be.called;
+
+        obj.a += 2;
+
+        expect(spy.withArgs(7)).to.be.calledOnce;
     });
 
     it('retain the this reference semantic', () => {
