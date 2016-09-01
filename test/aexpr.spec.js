@@ -1,5 +1,7 @@
 'use strict';
 
+import {reset} from 'aexpr-source-transformation-propagation';
+
 describe('Propagation Logic', function() {
 
     it('is a transparent wrapper for property accesses', () => {
@@ -84,5 +86,18 @@ describe('Propagation Logic', function() {
         obj.a = 1;
 
         expect(spy.withArgs(3)).to.be.calledOnce;
+    });
+
+    it('reset all active expressions', () => {
+        let obj = { prop: 42 },
+            spy = sinon.spy();
+
+        aexpr(() => obj.prop).onChange(spy);
+
+        reset();
+
+        obj.prop = 17;
+
+        expect(spy).not.to.be.called;
     });
 });
