@@ -90,7 +90,7 @@
     "webpack-config": "^5.2.1"
   },
   "dependencies": {
-    "aexpr-source-transformation-propagation": "^1.4.1",
+    "aexpr-source-transformation-propagation": "^1.4.2",
     "babel-plugin-aexpr-source-transformation": "^2.2.0",
     "stack-es2015-modules": "^1.1.0"
   }
