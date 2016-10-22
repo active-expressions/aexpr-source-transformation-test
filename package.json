@@ -1,6 +1,6 @@
 {
   "name": "aexpr-source-transformation-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Test project for the 3rd implementation of active expressions. ",
   "main": "dist/aexpr-source-transformation-test.js",
   "jsnext:main": "src/aexpr-source-transformation-test.js",
@@ -90,8 +90,8 @@
     "webpack-config": "^5.2.1"
   },
   "dependencies": {
-    "aexpr-source-transformation-propagation": "^1.4.2",
-    "babel-plugin-aexpr-source-transformation": "^2.2.0",
+    "aexpr-source-transformation-propagation": "^1.5.0",
+    "babel-plugin-aexpr-source-transformation": "^2.3.0",
     "stack-es2015-modules": "^1.1.0"
   }
 }
